@@ -10,6 +10,7 @@ import UIKit
 class CadastroNotaViewController: UIViewController {
     
     let RegisterScreenCustomView = NotaScreen()
+    var notas = [Notas]()
     
     override func viewDidLoad() {
         view = RegisterScreenCustomView
@@ -19,12 +20,18 @@ class CadastroNotaViewController: UIViewController {
     }
     
     @objc func NotasModel() {
-        let notas = Notas(nome: RegisterScreenCustomView.txtFieldNome.text,
-                  notaUm: Float(RegisterScreenCustomView.txtFieldNota.text ?? ""),
-                  notaDois: Float(RegisterScreenCustomView.txtFieldNotaDois.text ?? ""),
+        let userNota = Notas(nome: RegisterScreenCustomView.txtFieldNome.text,
+                          notaUm: Float(RegisterScreenCustomView.txtFieldNota.text ?? ""),
+                          notaDois: Float(RegisterScreenCustomView.txtFieldNotaDois.text ?? ""),
                           notaTres: Float(RegisterScreenCustomView.txtFieldNotaTres.text ?? "")) // passo 3 notasmodel
-        let cadastroViewController = MenuViewController() //passo 6 (????)
-        cadastroViewController.getNota(notas: notas)
+        
+        notas.append(userNota) // Adiciona objeto userNota inicializado dentro de uma lista (linha 13)
+        
+        if let json = try? JSONEncoder().encode(self.notas) { // Converte o tipo lista de Notas (model) para json
+            UserDefaults.standard.set(json, forKey: "notas") // Salva o json em um espaço da memória
+        }
+        
+        let cadastroViewController = TableViewController() //passo 6 (????)
         self.navigationController?.pushViewController(cadastroViewController, animated: true)
     }
 }
