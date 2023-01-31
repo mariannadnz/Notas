@@ -28,7 +28,7 @@ class DetailScreenView: BaseView {
     
     lazy var lblName: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.textAlignment = .center
         label.layer.borderWidth = 2
@@ -40,7 +40,7 @@ class DetailScreenView: BaseView {
     
     lazy var lblFirstGrade: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.textAlignment = .center
         label.layer.borderWidth = 2
@@ -50,7 +50,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var lblSecondGrade: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.textAlignment = .center
         label.layer.borderWidth = 2
@@ -60,7 +60,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var lblThirdGrade: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.textAlignment = .center
         label.layer.borderWidth = 2
@@ -70,7 +70,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var lblMedia: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.textAlignment = .center
         label.layer.borderWidth = 2
@@ -80,7 +80,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var Nome: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.layer.borderWidth = 2
         label.layer.cornerRadius = 3
@@ -90,7 +90,7 @@ class DetailScreenView: BaseView {
     
     lazy var NotaUm: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.layer.borderWidth = 2
         label.layer.cornerRadius = 3
@@ -99,7 +99,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var NotaDois: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.layer.borderWidth = 2
         label.layer.cornerRadius = 3
@@ -108,7 +108,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var notaTres: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         label.layer.borderWidth = 2
         label.layer.cornerRadius = 3
@@ -117,7 +117,7 @@ class DetailScreenView: BaseView {
     }()
     lazy var media: UILabel = {
         let label = UILabel()
-        label.layer.borderColor = UIColor.tintColor.cgColor
+        label.layer.borderColor = TINT_COLOR.cgColor
         label.layer.backgroundColor = UIColor(red: 0.89, green: 0.91, blue: 0.87, alpha: 1.00).cgColor
         
         label.layer.borderWidth = 2

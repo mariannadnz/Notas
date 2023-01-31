@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GradesModel: Codable { //PASSO UM NOTAS MODEL
+struct GradesModel: Codable { //PASSO UM NOTAS MODEL /n inicializad opq n e obrigatorio
     var nome: String?
     var firstGradeModel: Float?
     var secondGradeModel: Float?

@@ -35,7 +35,7 @@ class LoginScreen: UIView {
         textField.layer.cornerRadius = 8
         textField.layer.borderWidth = 1
         textField.layer.backgroundColor = UIColor.white.cgColor
-        textField.layer.borderColor = UIColor.tintColor.cgColor
+        textField.layer.borderColor = TINT_COLOR.cgColor
         return textField
     }()
     
@@ -48,7 +48,7 @@ class LoginScreen: UIView {
         textField.layer.cornerRadius = 8
         textField.layer.borderWidth = 1
         textField.layer.backgroundColor = UIColor.white.cgColor
-        textField.layer.borderColor = UIColor.tintColor.cgColor
+        textField.layer.borderColor = TINT_COLOR.cgColor
         return textField
     }()
     
@@ -61,7 +61,7 @@ class LoginScreen: UIView {
     
     lazy var registerButton: UIButton = {
         let button = UIButton(configuration: .filled())
-        button.setTitle("Notas cadastradas", for: .normal)
+        button.setTitle("Cadastre-se", for: .normal)
         return button
     }()
     

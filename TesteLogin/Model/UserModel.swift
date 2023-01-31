@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct User{
+struct User{  //inicializado pq o dado é obrigatorio 
     var name = String()
     var cpf = String()
     var birth = String()

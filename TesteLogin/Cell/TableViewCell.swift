@@ -41,7 +41,7 @@ class TableViewCell: BaseCell {
         addSubview(lblNome)
 //        addSubview(lblNotaTres)
         addSubview(lblMedia)
-        layer.borderColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
+        layer.borderColor = TINT_COLOR.cgColor
         layer.borderWidth = 3
         layer.cornerRadius = 5
 
