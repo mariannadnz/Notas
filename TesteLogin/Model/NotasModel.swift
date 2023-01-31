@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Notas { //PASSO UM NOTAS MODEL
+struct GradesModel: Codable { //PASSO UM NOTAS MODEL
     var nome: String?
-    var notaUm: Float?
-    var notaDois: Float?
-    var notaTres: Float?
+    var firstGradeModel: Float?
+    var secondGradeModel: Float?
+    var thirdGradeModel: Float?
     var media: Float?
 }

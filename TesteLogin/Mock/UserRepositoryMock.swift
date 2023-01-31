@@ -9,9 +9,9 @@ import UIKit
 
 class UserRepositoryMock {
     static let shared = UserRepositoryMock()
-    var lala: [User] = []
+    var UserMock: [User] = [] 
     
-    func getLogin(completion: @escaping([User]) -> ()){
-        completion(lala)
+    func getLogin(completion: @escaping([User]) -> ()) {
+        completion(UserMock)
     }
 }

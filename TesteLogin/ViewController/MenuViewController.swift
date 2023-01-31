@@ -9,7 +9,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
     let customView = CadastroScreenView()
-    var notas: Notas? // passo cinco
+    var notas: GradesModel? // passo cinco
     
     override func loadView() {
         view = customView
@@ -17,18 +17,18 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customView.cadastro.addTarget(self, action: #selector(registerViewController), for: .touchUpInside)
-        customView.notas.addTarget(self, action: #selector(NextViewController), for: .touchUpInside)
+        customView.registerButtom.addTarget(self, action: #selector(registerViewController), for: .touchUpInside)
+        customView.gradesButtom.addTarget(self, action: #selector(NextViewController), for: .touchUpInside)
         
     }
     
-    func getNota(notas: Notas){ //passo 4 NOTASMODEL --- recebendo dados
+    func getNota(notas: GradesModel){ //passo 4 NOTASMODEL --- recebendo dados
         self.notas = notas
     }
     
     @objc func registerViewController() {
         
-        let NotaViewController = CadastroNotaViewController()
+        let NotaViewController = GradesaRegisterViewController()
         self.navigationController?.pushViewController(NotaViewController, animated: true)
     }
     

@@ -8,22 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		4D63621329800300009A03DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63621229800300009A03DB /* AppDelegate.swift */; };
-		4D63621529800300009A03DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63621429800300009A03DB /* SceneDelegate.swift */; };
-		4D63621729800300009A03DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63621629800300009A03DB /* ViewController.swift */; };
-		4D63621A29800300009A03DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63621829800300009A03DB /* Main.storyboard */; };
+		4D63621729800300009A03DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63621629800300009A03DB /* LoginViewController.swift */; };
 		4D63621C29800301009A03DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D63621B29800301009A03DB /* Assets.xcassets */; };
 		4D63621F29800301009A03DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63621D29800301009A03DB /* LaunchScreen.storyboard */; };
+		4D6362272980040D009A03DB /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6362262980040D009A03DB /* LoginScreenView.swift */; };
+		4D63622B29800621009A03DB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63622A29800621009A03DB /* UIView+Extension.swift */; };
+		4D63622D2980104F009A03DB /* RegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63622C2980104F009A03DB /* RegisterScreenView.swift */; };
+		4D63622F298010A1009A03DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63622E298010A1009A03DB /* RegisterViewController.swift */; };
+		4D6362312980159C009A03DB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6362302980159C009A03DB /* UserModel.swift */; };
+		4D636233298015C0009A03DB /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D636232298015C0009A03DB /* UserRepositoryMock.swift */; };
+		4D63623529801692009A03DB /* MenuScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623429801692009A03DB /* MenuScreenView.swift */; };
+		4D63623729801698009A03DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623629801698009A03DB /* MenuViewController.swift */; };
+		4D636242298016E5009A03DB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623B298016E5009A03DB /* BaseView.swift */; };
+		4D636243298016E5009A03DB /* NotasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623C298016E5009A03DB /* NotasModel.swift */; };
+		4D636244298016E5009A03DB /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623D298016E5009A03DB /* BaseCell.swift */; };
+		4D636245298016E5009A03DB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63623E298016E5009A03DB /* TableViewCell.swift */; };
+		4D63624929801728009A03DB /* TableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624629801728009A03DB /* TableScreenView.swift */; };
+		4D63624A29801728009A03DB /* DetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624729801728009A03DB /* DetailScreenView.swift */; };
+		4D63624B29801728009A03DB /* NotaScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624829801728009A03DB /* NotaScreenView.swift */; };
+		4D63624F29801735009A03DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624C29801735009A03DB /* DetailViewController.swift */; };
+		4D63625029801735009A03DB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624D29801735009A03DB /* TableViewController.swift */; };
+		4D63625129801735009A03DB /* GradesRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63624E29801735009A03DB /* GradesRegisterViewController.swift */; };
+		4D6362562981569C009A03DB /* EditCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6362552981569C009A03DB /* EditCellViewController.swift */; };
+		4D636258298157CD009A03DB /* EditCellScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D636257298157CD009A03DB /* EditCellScreenView.swift */; };
+		4D63625A2981963D009A03DB /* GradesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6362592981963D009A03DB /* GradesMock.swift */; };
+		4D63632129893D0C009A03DB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63632029893D0C009A03DB /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D63620F29800300009A03DB /* TesteLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D63621229800300009A03DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D63621429800300009A03DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D63621629800300009A03DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D63621929800300009A03DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D63621629800300009A03DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D63621B29800301009A03DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D63621E29800301009A03DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D63622029800301009A03DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D6362262980040D009A03DB /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		4D63622A29800621009A03DB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4D63622C2980104F009A03DB /* RegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenView.swift; sourceTree = "<group>"; };
+		4D63622E298010A1009A03DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4D6362302980159C009A03DB /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4D636232298015C0009A03DB /* UserRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		4D63623429801692009A03DB /* MenuScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenView.swift; sourceTree = "<group>"; };
+		4D63623629801698009A03DB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4D63623B298016E5009A03DB /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		4D63623C298016E5009A03DB /* NotasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasModel.swift; sourceTree = "<group>"; };
+		4D63623D298016E5009A03DB /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		4D63623E298016E5009A03DB /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4D63624629801728009A03DB /* TableScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableScreenView.swift; sourceTree = "<group>"; };
+		4D63624729801728009A03DB /* DetailScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScreenView.swift; sourceTree = "<group>"; };
+		4D63624829801728009A03DB /* NotaScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaScreenView.swift; sourceTree = "<group>"; };
+		4D63624C29801735009A03DB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4D63624D29801735009A03DB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4D63624E29801735009A03DB /* GradesRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesRegisterViewController.swift; sourceTree = "<group>"; };
+		4D6362552981569C009A03DB /* EditCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCellViewController.swift; sourceTree = "<group>"; };
+		4D636257298157CD009A03DB /* EditCellScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCellScreenView.swift; sourceTree = "<group>"; };
+		4D6362592981963D009A03DB /* GradesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesMock.swift; sourceTree = "<group>"; };
+		4D63632029893D0C009A03DB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +96,83 @@
 		4D63621129800300009A03DB /* TesteLogin */ = {
 			isa = PBXGroup;
 			children = (
+				4D63631F29893CF7009A03DB /* Utils */,
 				4D63621229800300009A03DB /* AppDelegate.swift */,
-				4D63621429800300009A03DB /* SceneDelegate.swift */,
-				4D63621629800300009A03DB /* ViewController.swift */,
-				4D63621829800300009A03DB /* Main.storyboard */,
 				4D63621B29800301009A03DB /* Assets.xcassets */,
 				4D63621D29800301009A03DB /* LaunchScreen.storyboard */,
+				4D63622A29800621009A03DB /* UIView+Extension.swift */,
 				4D63622029800301009A03DB /* Info.plist */,
+				4D636252298017BF009A03DB /* Cell */,
+				4D63622929800478009A03DB /* ViewController */,
+				4D6362542980181D009A03DB /* Model */,
+				4D636253298017F7009A03DB /* Mock */,
+				4D63622829800416009A03DB /* ScreenView */,
 			);
 			path = TesteLogin;
+			sourceTree = "<group>";
+		};
+		4D63622829800416009A03DB /* ScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				4D63623B298016E5009A03DB /* BaseView.swift */,
+				4D6362262980040D009A03DB /* LoginScreenView.swift */,
+				4D63622C2980104F009A03DB /* RegisterScreenView.swift */,
+				4D63623429801692009A03DB /* MenuScreenView.swift */,
+				4D63624829801728009A03DB /* NotaScreenView.swift */,
+				4D63624729801728009A03DB /* DetailScreenView.swift */,
+				4D63624629801728009A03DB /* TableScreenView.swift */,
+				4D636257298157CD009A03DB /* EditCellScreenView.swift */,
+			);
+			path = ScreenView;
+			sourceTree = "<group>";
+		};
+		4D63622929800478009A03DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D63621629800300009A03DB /* LoginViewController.swift */,
+				4D63622E298010A1009A03DB /* RegisterViewController.swift */,
+				4D63623629801698009A03DB /* MenuViewController.swift */,
+				4D63624E29801735009A03DB /* GradesRegisterViewController.swift */,
+				4D63624C29801735009A03DB /* DetailViewController.swift */,
+				4D63624D29801735009A03DB /* TableViewController.swift */,
+				4D6362552981569C009A03DB /* EditCellViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4D636252298017BF009A03DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D63623D298016E5009A03DB /* BaseCell.swift */,
+				4D63623E298016E5009A03DB /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4D636253298017F7009A03DB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4D636232298015C0009A03DB /* UserRepositoryMock.swift */,
+				4D6362592981963D009A03DB /* GradesMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		4D6362542980181D009A03DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D63623C298016E5009A03DB /* NotasModel.swift */,
+				4D6362302980159C009A03DB /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D63631F29893CF7009A03DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D63632029893D0C009A03DB /* Color.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +235,6 @@
 			files = (
 				4D63621F29800301009A03DB /* LaunchScreen.storyboard in Resources */,
 				4D63621C29800301009A03DB /* Assets.xcassets in Resources */,
-				4D63621A29800300009A03DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +245,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D63621729800300009A03DB /* ViewController.swift in Sources */,
+				4D636245298016E5009A03DB /* TableViewCell.swift in Sources */,
+				4D6362562981569C009A03DB /* EditCellViewController.swift in Sources */,
+				4D636242298016E5009A03DB /* BaseView.swift in Sources */,
+				4D63621729800300009A03DB /* LoginViewController.swift in Sources */,
+				4D63623729801698009A03DB /* MenuViewController.swift in Sources */,
+				4D63632129893D0C009A03DB /* Color.swift in Sources */,
+				4D63624A29801728009A03DB /* DetailScreenView.swift in Sources */,
+				4D6362312980159C009A03DB /* UserModel.swift in Sources */,
+				4D63625129801735009A03DB /* GradesRegisterViewController.swift in Sources */,
+				4D636243298016E5009A03DB /* NotasModel.swift in Sources */,
+				4D6362272980040D009A03DB /* LoginScreenView.swift in Sources */,
+				4D63622B29800621009A03DB /* UIView+Extension.swift in Sources */,
+				4D63624B29801728009A03DB /* NotaScreenView.swift in Sources */,
+				4D636233298015C0009A03DB /* UserRepositoryMock.swift in Sources */,
+				4D63624929801728009A03DB /* TableScreenView.swift in Sources */,
+				4D63625A2981963D009A03DB /* GradesMock.swift in Sources */,
+				4D63622F298010A1009A03DB /* RegisterViewController.swift in Sources */,
+				4D63625029801735009A03DB /* TableViewController.swift in Sources */,
 				4D63621329800300009A03DB /* AppDelegate.swift in Sources */,
-				4D63621529800300009A03DB /* SceneDelegate.swift in Sources */,
+				4D63624F29801735009A03DB /* DetailViewController.swift in Sources */,
+				4D636258298157CD009A03DB /* EditCellScreenView.swift in Sources */,
+				4D63622D2980104F009A03DB /* RegisterScreenView.swift in Sources */,
+				4D636244298016E5009A03DB /* BaseCell.swift in Sources */,
+				4D63623529801692009A03DB /* MenuScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D63621829800300009A03DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D63621929800300009A03DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D63621D29800301009A03DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +411,6 @@
 				INFOPLIST_FILE = TesteLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +437,6 @@
 				INFOPLIST_FILE = TesteLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

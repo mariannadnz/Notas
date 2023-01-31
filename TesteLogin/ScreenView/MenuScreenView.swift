@@ -9,25 +9,17 @@ import UIKit
 
 class CadastroScreenView: UIView {
     
-    lazy var cadastro: UIButton = {
-        let button = UIButton()
-        button.setTitle("Cadastro de Notas", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.masksToBounds = true
-        button.layer.backgroundColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
-        button.layer.cornerRadius = 8
+    lazy var registerButtom: UIButton = {
+        let button = UIButton(configuration: .filled())
+        button.setTitle("Cadastros de notas", for: .normal)
         return button
     }()
     
 
     
-    lazy var notas: UIButton = {
-        let button = UIButton()
+    lazy var gradesButtom: UIButton = {
+        let button = UIButton(configuration: .filled())
         button.setTitle("Notas cadastradas", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.masksToBounds = true
-        button.layer.backgroundColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
-        button.layer.cornerRadius = 8
         return button
     }()
     
@@ -46,16 +38,16 @@ class CadastroScreenView: UIView {
     
    func addSubviews() {
         
-        addSubview(cadastro)
+        addSubview(registerButtom)
     
-        addSubview(notas)
+        addSubview(gradesButtom)
         addConstraints()
         
         
     }
     func addConstraints() {
         
-        cadastro.anchor(
+        registerButtom.anchor(
             top: safeAreaLayoutGuide.topAnchor,
             leading: safeAreaLayoutGuide.leadingAnchor,
             bottom: nil,
@@ -64,11 +56,11 @@ class CadastroScreenView: UIView {
             size: .init(width: 363, height: 40))
         
      
-        notas.anchor(
-            top: cadastro.topAnchor,
-            leading: cadastro.leadingAnchor,
+        gradesButtom.anchor(
+            top: registerButtom.topAnchor,
+            leading: registerButtom.leadingAnchor,
             bottom: nil,
-            trailing: cadastro.trailingAnchor,
+            trailing: registerButtom.trailingAnchor,
             padding: .init(top:50, left: 0, bottom: 0, right: 0),
             size: .init(width: 363, height: 40))
         

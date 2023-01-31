@@ -3,7 +3,7 @@ import UIKit
 class RegisterViewController: UIViewController {
     
     
-    let RegisterScreenCustomView = RegisterScreen()
+    let RegisterScreenCustomView = GradesRegisterScreen()
     
     override func loadView() {
         view = RegisterScreenCustomView
@@ -25,7 +25,7 @@ class RegisterViewController: UIViewController {
         let loginViewController = LoginViewController()
         
         loginViewController.createUser = createUser
-        UserRepositoryMock.shared.lala.append(createUser)
+        UserRepositoryMock.shared.UserMock.append(createUser)
         
         self.navigationController?.pushViewController(loginViewController, animated: true)
         

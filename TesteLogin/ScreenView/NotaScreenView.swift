@@ -2,49 +2,55 @@
 
 import UIKit
 
-class NotaScreen: UIView {
+class GradesRegisterScreenView: UIView {
     
     
     lazy var background: UIView = {
         let background = UIView()
-        let customColor = UIColor.white
-        background.backgroundColor = customColor
         return background
     }()
     
-    lazy var txtFieldNome: UITextField = {
+    lazy var txtFieldName: UITextField = {
         let textField = UITextField()
         textField.placeholder = "   Nome"
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         textField.layer.borderWidth = 3
-        textField.layer.borderColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
+        textField.layer.borderColor = UIColor.tintColor.cgColor
         textField.layer.backgroundColor = UIColor.white.cgColor
         return textField
     }()
     
-    lazy var txtFieldNota: UITextField = {
+    lazy var txtFieldFirstGrade: UITextField = {
         let textField = UITextField()
         textField.placeholder = "   Primeira Nota"
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         textField.layer.borderWidth = 3
-        textField.layer.borderColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
+        textField.layer.borderColor = UIColor.tintColor.cgColor
         textField.layer.backgroundColor = UIColor.white.cgColor
         return textField
     }()
     
-    lazy var txtFieldNotaDois: UITextField = {
+    lazy var txtFieldSecondGrade: UITextField = {
         let textField = UITextField()
         textField.placeholder = "  Segunda Nota"
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         textField.layer.borderWidth = 3
-        textField.layer.borderColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
+        textField.layer.borderColor = UIColor.tintColor.cgColor
         textField.layer.backgroundColor = UIColor.white.cgColor
         
         return textField
     }()
     
-    lazy var txtFieldNotaTres: UITextField = {
+    lazy var txtFieldThirdGrade: UITextField = {
         let textField = UITextField()
         textField.placeholder = "  Terceira Nota"
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: textField.frame.height))
+        textField.leftViewMode = .always
         textField.layer.borderWidth = 3
-        textField.layer.borderColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
+        textField.layer.borderColor = UIColor.tintColor.cgColor
         textField.layer.backgroundColor = UIColor.white.cgColor
         return textField
     }()
@@ -52,12 +58,8 @@ class NotaScreen: UIView {
     
     
     lazy var registerButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("     Finalizar Cadastro", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.backgroundColor = UIColor(red: 0.05, green: 0.36, blue: 0.39, alpha: 1.00).cgColor
-        button.layer.masksToBounds = true
-        button.layer.cornerRadius = 10
+        let button = UIButton(configuration: .filled())
+        button.setTitle("Finalizar Cadastro", for: .normal)
         return button
     }()
     override init(frame: CGRect) {
@@ -72,11 +74,11 @@ class NotaScreen: UIView {
     func addSubviews() {
         
         addSubview(background)
-        addSubview(txtFieldNota)
-        addSubview(txtFieldNotaDois)
-        addSubview(txtFieldNotaTres)
+        addSubview(txtFieldFirstGrade)
+        addSubview(txtFieldSecondGrade)
+        addSubview(txtFieldThirdGrade)
         addSubview(registerButton)
-        addSubview(txtFieldNome)
+        addSubview(txtFieldName)
         
         addConstraints()
         
@@ -90,46 +92,46 @@ class NotaScreen: UIView {
             bottom: self.bottomAnchor,
             trailing: self.trailingAnchor)
         
-        txtFieldNome.anchor(
+        txtFieldName.anchor(
             top: background.topAnchor,
-            leading: txtFieldNota.leadingAnchor,
+            leading: txtFieldFirstGrade.leadingAnchor,
             bottom: nil,
-            trailing: txtFieldNota.trailingAnchor,
+            trailing: txtFieldFirstGrade.trailingAnchor,
             padding: .init(top: 100, left: 0, bottom: 0, right: 0),
             size: .init(width: 250, height: 120))
-        txtFieldNota.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        txtFieldFirstGrade.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
         
-        txtFieldNota.anchor(
-            top: txtFieldNome.bottomAnchor,
+        txtFieldFirstGrade.anchor(
+            top: txtFieldName.bottomAnchor,
             leading: nil,
             bottom: nil,
             trailing:nil,
             padding: .init(top: 30, left: 0, bottom: 0, right: 0),
             size: .init(width: 250, height: 120))
-        txtFieldNota.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        txtFieldFirstGrade.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
-        txtFieldNotaDois.anchor(
-            top: txtFieldNota.bottomAnchor,
+        txtFieldSecondGrade.anchor(
+            top: txtFieldFirstGrade.bottomAnchor,
             leading: nil,
             bottom: nil,
             trailing:nil,
             padding: .init(top: 30, left: 0, bottom: 0, right: 0),
             size: .init(width: 250, height: 120))
-        txtFieldNotaDois.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        txtFieldSecondGrade.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
-        txtFieldNotaTres.anchor(
-            top: txtFieldNotaDois.bottomAnchor,
+        txtFieldThirdGrade.anchor(
+            top: txtFieldSecondGrade.bottomAnchor,
             leading: nil,
             bottom: nil,
             trailing:nil,
             padding: .init(top: 30, left: 0, bottom: 0, right: 0),
             size: .init(width: 250, height: 120))
-        txtFieldNotaTres.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        txtFieldThirdGrade.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
         
         registerButton.anchor(
-            top: txtFieldNotaTres.bottomAnchor,
+            top: txtFieldThirdGrade.bottomAnchor,
             leading: nil,
             bottom: nil,
             trailing:nil,
@@ -138,5 +140,5 @@ class NotaScreen: UIView {
         registerButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
     }
-
+    
 }

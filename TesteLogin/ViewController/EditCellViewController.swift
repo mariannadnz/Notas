@@ -7,7 +7,9 @@
 
 import UIKit
 class EditCellViewController: UIViewController {
-    let editCellScreen = EditCellScreenView()
+    var updateGrade: (GradesModel) -> Void = {_ in}
+    
+    let editCellScreen = EditCellScreenView() 
     
     override func loadView() {
         view = editCellScreen
@@ -16,22 +18,27 @@ class EditCellViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editCellScreen.updateButton.addTarget(self, action: #selector(updateData), for: .touchUpInside)
+        
+   
     }
     
-    func getNota(nota: Notas) {
+    func getNota(nota: GradesModel) {
         editCellScreen.nota = nota
     }
     
-    @objc func updateData() {
-        let notaUpdated = Notas(
-            nome: editCellScreen.txtFieldNome.text,
-            notaUm: Float(editCellScreen.txtFieldNota.text ?? ""),
-            notaDois: Float(editCellScreen.txtFieldNotaDois.text ?? ""),
-            notaTres: Float(editCellScreen.txtFieldNotaTres.text ?? ""),
+    @objc func updateData() { //mandando os dados editados
+        let notaUpdated = GradesModel(
+            nome: editCellScreen.txtFieldName.text,
+            firstGradeModel: Float(editCellScreen.txtFieldFirstGrade.text ?? ""),
+            secondGradeModel: Float(editCellScreen.txtFieldSecondGrade.text ?? ""),
+            thirdGradeModel: Float(editCellScreen.txtFieldThirdGrade.text ?? ""),
             media: editCellScreen.nota?.media)
         
         let tableViewController = TableViewController()
-        tableViewController.getNota(nota: notaUpdated)
-        self.navigationController?.pushViewController(tableViewController, animated: true)
+   
+        
+        updateGrade(notaUpdated)
+        
+        self.navigationController?.pushViewController(tableViewController, animated: true) //mandando os dados editados
     }
 }

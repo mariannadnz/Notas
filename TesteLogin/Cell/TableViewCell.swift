@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewCell: BaseCell {
     
-    var notas: Notas? {
+    var notas: GradesModel? {
         didSet {
             lblNome.text = notas?.nome
             if let media = notas?.media {
